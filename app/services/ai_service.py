@@ -48,7 +48,7 @@ REGLAS ABSOLUTAS:
 6. Si preguntan por despacho: SI llegamos a todas las comunas de Santiago
 7. Mensajes cortos y amables"""
 
-async def confirmar_pedido_bsale(numero_pedido: str):
+async def confirmar_pedido_bsale_disabled(numero_pedido: str):
     try:
         headers = {"access_token": BSALE_TOKEN}
         async with httpx.AsyncClient(timeout=8) as client:
