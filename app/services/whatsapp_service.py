@@ -1,7 +1,7 @@
 import httpx, os
 
-WA_TOKEN = os.getenv("WHATSAPP_TOKEN")
-WA_PHONE_ID = os.getenv("WHATSAPP_PHONE_NUMBER_ID")
+WA_TOKEN = (os.getenv("WHATSAPP_TOKEN") or "").strip()
+WA_PHONE_ID = (os.getenv("WHATSAPP_PHONE_NUMBER_ID") or "").strip()
 WA_URL = f"https://graph.facebook.com/v18.0/{WA_PHONE_ID}/messages"
 
 RESPUESTAS = {
