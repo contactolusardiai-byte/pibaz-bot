@@ -4,22 +4,24 @@ WA_TOKEN = (os.getenv("WHATSAPP_TOKEN") or "").strip()
 WA_PHONE_ID = (os.getenv("WHATSAPP_PHONE_NUMBER_ID") or "").strip()
 WA_URL = f"https://graph.facebook.com/v18.0/{WA_PHONE_ID}/messages"
 
+
 RESPUESTAS = {
-    "horario": "Abrimos todos los dias de 10:00 a 20:45 hrs.",
-    "ubicacion": "Estamos en Gran Avenida Jose Miguel Carrera 10375, El Bosque, Santiago.",
-    "precio": "Puedes ver precios y disponibilidad en pibaz.cl",
-    "anticipacion": "Tortas clasicas: 1 dia de anticipacion. Tortas premium: 5 dias. Puedes pedirlas en pibaz.cl o en el local.",
-    "delivery": "Si! Hacemos envios a todas las comunas de Santiago. Delivery solo de tortas, reserva antes de las 15:00 para recibir el mismo dia. Visita pibaz.cl o acercate al local.",
-    "pago": "Aceptamos transferencia, debito, credito y efectivo.",
-    "sin_azucar": "Por el momento no contamos con productos sin azucar, sin lactosa ni sin gluten.",
-    "catalogo": "Todas nuestras tortas estan en pibaz.cl. Tambien puedes visitarnos en el local en El Bosque. Abrimos todos los dias de 10:00 a 20:45 hrs.",
-    "chocolate": "Tenemos varias tortas de chocolate: Selva Negra, Panqueque Chocolate Manjar, Panqueque Chocolate Guinda, Trilogia de Chocolates y Torta Oreo. Encuentralas en pibaz.cl o visitanos en el local.",
-    "lucuma": "Si! Tenemos la Torta Lucuma Manjar en distintas porciones. Encuentrala en pibaz.cl o visitanos en el local en El Bosque.",
-    "comprar_hoy": "Para tortas disponibles hoy visita pibaz.cl seccion Retiro Inmediato o acercate al local en El Bosque. Abrimos de 10:00 a 20:45 hrs.",
-    "comprar_anticipado": "Puedes hacer tu pedido en pibaz.cl o en el local. Tortas clasicas: 1 dia de anticipacion. Tortas premium: 5 dias.",
-    "carta": "Nuestra carta de cafeteria, pizzas y sandwiches la encuentras en cartapibaz.cl. Para tortas visita pibaz.cl",
-    "porciones": "Nuestras tortas parten desde 12 personas. Puedes ver todas las opciones y tamanios en pibaz.cl",
+    "horario": "Abrimos todos los días de 10:00 a 20:45 hrs. 😊 Te esperamos!",
+    "ubicacion": "Estamos en Gran Avenida José Miguel Carrera 10375, El Bosque, Santiago! 📍",
+    "precio": "Los precios y fotos de todas nuestras tortas están en pibaz.cl 🍰 Ahí puedes ver todo el catálogo!",
+    "anticipacion": "Las tortas clásicas las pedimos con 1 día de anticipación y las premium con 5 días. Puedes hacer tu pedido en pibaz.cl o visitarnos en el local! 😊",
+    "delivery": "Sí! Hacemos delivery a todas las comunas de Santiago 🚚 Solo de tortas, y si reservas antes de las 15:00 te llega el mismo día! Visita pibaz.cl para pedir.",
+    "pago": "Aceptamos transferencia, débito, crédito y efectivo. Sin problemas! 😊",
+    "sin_azucar": "Pucha, por ahora no tenemos opciones sin azúcar, sin lactosa ni sin gluten 😔 Pero nuestras tortas clásicas son espectaculares! La Tres Leches y la Lucuma Manjar son las favoritas. Míralas en pibaz.cl 🍰",
+    "catalogo": "Todas nuestras tortas están en pibaz.cl 🍰 Para la carta del local (pizzas, sandwiches, café) visita cartapibaz.cl. También puedes venir a vernos al local en El Bosque!",
+    "chocolate": "Tenemos varias tortas de chocolate que están increíbles 🍫 Selva Negra, Panqueque Chocolate Manjar, Panqueque Chocolate Guinda, Trilogía de Chocolates y Torta Oreo. Míralas en pibaz.cl!",
+    "lucuma": "Sí! Tenemos la Torta Lúcuma Manjar que es un clásico favorito 😍 Encuéntrala en pibaz.cl o pasa a verla al local en El Bosque!",
+    "comprar_hoy": "Para ver qué tortas tenemos disponibles hoy entra a pibaz.cl sección Retiro Inmediato 🍰 O pasa directamente al local, abrimos hasta las 20:45!",
+    "comprar_anticipado": "Perfecto! Para hacer un pedido con anticipación entra a pibaz.cl o pasa al local 😊 Clásicas: 1 día de anticipación. Premium: 5 días.",
+    "carta": "La carta del local con pizzas, sandwiches y café está en cartapibaz.cl 😊 Y para tortas visita pibaz.cl!",
+    "porciones": "Nuestras tortas parten desde 12 personas 🎂 Puedes ver todos los tamaños disponibles en pibaz.cl!",
 }
+
 
 PALABRAS_CLAVE = {
     "horario": ["horario", "hora", "abren", "cierran", "atienden", "abiertos", "hasta que hora"],
